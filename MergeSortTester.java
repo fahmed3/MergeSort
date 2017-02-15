@@ -2,10 +2,10 @@
   class MergeSortTester
 
   ALGORITHM:
-  <INSERT YOUR DISTILLATION OF ALGO HERE>
+  MergeSort splits an array into two until the array lengths are 1. If the array length is 1, the array is sorted so then it is merged with the other half of the array it came from.
 
   BIG-OH CLASSIFICATION OF ALGORITHM:
-  <INSERT YOUR EXECUTION TIME CATEGORIZATION OF MERGESORT HERE>
+  O(nlogn)
 
   Mean execution times for dataset of size n:
   Batch size: <# of times each dataset size was run>

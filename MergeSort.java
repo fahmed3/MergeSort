@@ -1,11 +1,14 @@
+//SortOfO(n)Task - Fabiha Ahmed, Adrian Boylan
+//APCS2 pd5
+//HW07 -- What Does the Data Say?
+//2017-02-14
+
 /*======================================
   class MergeSort
   Implements mergesort on array of ints.
   Summary of Algorithm: 
-  1. If dataset size == 1, return (1-element list is sorted)
-  2. Else split dataset in half and recurse on each half
-     When each of those halves is returned sorted, merge them. 
-     (Continually append min val from front of each.)
+1. Split list into 2 lists until the lists only have 1 element in it.
+2. Merge and sort two lists by comparing the first element of both and putting the lower one in the new list.
   ======================================*/
 
 public class MergeSort {
@@ -38,7 +41,7 @@ public class MergeSort {
 	    }
 	    pos++;
 	}
-	//at least one input array has been exhausted
+	//rest of list
 	if ( bPos >= b.length )
 	    for( ; pos < retArr.length; pos++ ) {
 		retArr[pos] = a[aPos]; 
@@ -65,7 +68,7 @@ public class MergeSort {
 	if ( arr.length <= 1 ) 
 	    return arr;//O(1)
 
-	//else, halve dataset and recurse on each half
+	//else split in two
 	int half = arr.length / 2;
 	int[] arr1 = new int[ half ];
 	int[] arr2 = new int[ arr.length - half ];
